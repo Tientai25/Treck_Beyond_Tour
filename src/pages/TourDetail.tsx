@@ -520,12 +520,12 @@ const TourDetail = () => {
               <div className="space-y-1 text-sm">
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Ngân hàng:</span>
-                  <span className="font-semibold text-primary text-lg">TP Bank</span>
+                  <span className="font-semibold text-primary text-lg">Vietcombank</span>
                 </div>
                 <Separator /> 
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Số tài khoản:</span>
-                  <span className="font-mono font-bold text-xl">12090355425</span>
+                  <span className="font-mono font-bold text-xl">9865798099</span>
                 </div>
                 <Separator />
                 <div className="flex justify-between items-center">
@@ -551,7 +551,7 @@ const TourDetail = () => {
             <div className="flex flex-col items-center gap-3 bg-muted/30 p-4 rounded-lg">
               <p className="text-sm font-medium text-muted-foreground">Quét mã QR để chuyển khoản</p>
               <img
-                src={`https://img.vietqr.io/image/TPB-12090355425-compact2.png?amount=${tour ? tour.price * participants : 0}&addInfo=${encodeURIComponent(`${userProfile?.phone || ""} ${userProfile?.full_name || user?.email || ""}`)}`}
+                src={`https://img.vietqr.io/image/VCB-9865798099-compact2.png?amount=${tour ? tour.price * participants : 0}&addInfo=${encodeURIComponent(`${userProfile?.phone || ""} ${userProfile?.full_name || user?.email || ""}`)}`}
                 alt="QR Code chuyển khoản"
                 className="w-64 h-64 border-4 border-primary/20 rounded-lg"
               />
